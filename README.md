@@ -4,7 +4,10 @@
 ## Team Members and Roles
 
 - Zabheen Shaik - Web Application Developer.
--Jessica Salome - Developer
+- Jessica Salome - Developer
+- Sai Malayaja Varada - Quality Assurance Tester
+- Bhavishya Yarapathineni - Cloud Developer
+- Prasanna - Android Application Developer
 
 ## Abstract
 

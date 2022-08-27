@@ -4,6 +4,7 @@
 ## Team Members and Roles
 
 - Zabheen Shaik - Web Application Developer.
+-Jessica Salome - Developer
 
 ## Abstract
 

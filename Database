@@ -1,0 +1,11 @@
+DATABASE :
+A database is a systematic and organized collection of structured information oordata. They supports electronic storage , data manipulation and even makes data
+management.  A database is usually controlled by a database management system (DBMS). Together, the data and the DBMS, along with the applications that are associated 
+with them, are referred to as a database system, often shortened to just database.
+In most common types of databases that are in operation today, data is typically modeled in rows and columns in a series of tables to make processing and    
+data querying efficient. The data can then be easily accessed, managed, modified, updated, controlled, and organized. Most databases use structured query language (SQL) 
+for writing and querying data.
+SQL :
+SQL  is a programming tool to manipulate data stored in relational databases. The system holds the data in tables comprising columns and rows.
+MySQL :
+MySQL is a relational database management system that allows you to store, retrieve and execute queries on data.

@@ -1,0 +1,14 @@
+app.py file :
+We can run the app.py by right clicking on it.
+Before that we need to install flask to run the code. Flask is used to run the web applications using python.
+We can install it by using the command  Pip install flask in command prompt( cmd).
+After flask has been imported and assigned to app, then if we run the app.py code we are calling localhost which means we will get the link for criminal identification 
+home page web application.
+whenever this command is executed it goes to index() function and it return index.html file.
+template file :
+In footer html some description will be added.
+In header.html buttons are present.
+In index.html, home page has been created using python and flask.
+further login, register boxes will be created for Authorities and Users and database will be created to store user, authority and criminal details.
+
+

@@ -1,0 +1,17 @@
+How to connect the Android App and Flask server?
+
+1. How to connect the Android App and Flask server?
+
+In order to connect the Android App and Flask server, you will need to use a process known as 'sockets'. Sockets allow two devices to communicate with each other over a network. In this case, the Android App and Flask server will be communicating with each other over the internet.
+
+The first thing you need to do is create a socket on the Android App. This can be done using the 'createSocket()' method. Once the socket has been created, you need to specify the address of the Flask server. This can be done using the 'connect()' method.
+
+Once the connection has been established, you can start sending data back and forth between the two devices. To do this, you will need to use the 'write()' and 'read()' methods. These methods will allow you to send data in various formats such as strings, integers, etc.
+
+How to use the Face Detection and Recognition Using A Criminal Identification System?
+
+1. How to use the Face Detection and Recognition Using A Criminal Identification System?
+
+The Face Detection and Recognition Using A Criminal Identification System can be used by law enforcement agencies to identify criminals. The system works by taking a picture of the person's face and then comparing it to a database of known criminals. If a match is found, the law enforcement agency can then take appropriate action.
+
+To use the system, simply take a picture of the person's face using an Android device. The system will then search the database for a match and provide the law enforcement agency with the information they need to take action.

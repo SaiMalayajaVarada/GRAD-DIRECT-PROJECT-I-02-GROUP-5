@@ -1,0 +1,19 @@
+Introduction
+
+Android applications are usually written in Java. However, the Android SDK allows you to write your applications in other languages as well, such as C++. In this blog post, we will show you how to write an Android application in Python using the popular Flask web framework. Flask is a microframework for Python that allows you to create web applications in a very simple and concise way. It is perfect for creating small applications that need minimal functionality. In this blog post, we will show you how to use Flask to create an Android application that can perform face detection and recognition. We will also show you how to connect the Android app to a server so that it can be used as a part of a criminal identification system.
+
+What is the Android App?
+
+The Android App is the client application that will be used to interface with the server. It will provide a graphical interface for the user to input an image, and receive results from the server. The app will also allow the user to register and login to their account, so that they can save images and receive results for previous searches.
+
+What is Flask?
+
+1. Flask is a web application framework written in Python. It is designed to make getting started quick and easy, with the ability to scale up to complex applications. Flask is based on Werkzeug WSGI toolkit and Jinja2 template engine.
+
+2. Flask offers suggestions for developers on how to best structure their code. However, because Flask is so lightweight, many decisions are left up to the developer. This allows for greater flexibility, but can also be overwhelming for those new to web development.
+
+3. One of the key features of Flask is its built-in development server which reloads the application whenever changes are made to the code base. This makes developing web applications in Flask very quick and easy.
+
+4. Another key feature of Flask is its support for unit testing. This allows developers to test their application before deploying it live.
+
+5 .Flask is a great choice for small-scale projects or prototypes as it offers a lot of flexibility and can be easily extended with additional libraries or modules if needed.

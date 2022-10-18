@@ -3,11 +3,36 @@
 
 ## Team Members and Roles
 
-- Zabheen Shaik - Web Application Developer.
-- Jessica Salome - Android Developer
-- Sai Malayaja Varada - Quality Assurance Tester
-- Bhavishya Yarapathineni - Cloud Developer
-- Prasanna - Associate Developer
+-- Zabheen Shaik 
+Web Application Developer
+🔭 I’m currently working on Visual studios using python and web.
+🌱 I’m currently learning on GDP Course.
+⚡ Fun fact: I am interested in swimming and Cooking.
+
+-- Jessica Salome Merugu
+Android Application Developer
+🔭 I’m currently working on Android studios using java and flask.
+🌱 I’m currently pursing GDP Course.
+⚡ Fun fact: I am interested in readind books and passionate garderner.
+
+-- Sai Malayaja Varada
+Quality Assurance Tester
+🔭 I’m currently working on Sqlworkbench db.
+🌱 I’m currently pursing GDP Course.
+⚡ Fun fact: I am interested in travelling and cooking.
+
+ -- Bhavishya Yarapathineni
+Cloud Developer
+🔭 I’m currently working on Visual coding.
+🌱 I’m currently pursing GDP Course.
+⚡ Fun fact: I am interested in learning about new things.
+
+-- Prasanna 
+Associate Application Developer
+🔭 I’m currently working on Android.
+🌱 I’m currently pursing GDP Course.
+⚡ Fun fact: I am interested in cooking and travelling.
+
 
 ## Abstract
 

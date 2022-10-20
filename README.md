@@ -41,7 +41,7 @@ using cutting-edge face recognition systems is a simple and quicksolution.Camera
 
 [Prototype with Explanation.docx](https://github.com/SaiMalayajaVarada/GRAD-DIRECT-PROJECT-I-02-GROUP-5/files/9825909/Prototype.with.Explanation.docx)
 
-[Over view of methodology](Documents)
+[Overview of Methodology](Documents)
 
 
 

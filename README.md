@@ -5,7 +5,7 @@
 
 ##### Zabheen Shaik 
 > -  Web Application Developer
-> - 🔭 I’m currently doing Master's in Computer Science.
+> - 🔭 I’m currently working on Visual studio using python.
 > - 🌱 I’m currently learning on GDP Course.
 > - ⚡ Fun fact: I am interested in swimming and Cooking.
 
@@ -39,7 +39,7 @@
 > Identifying and spotting a criminal is a time-consuming and difficult process.Criminals are becoming smarter by not leaving biological evidence or fingerprint impressions at crime scenes. 
 using cutting-edge face recognition systems is a simple and quicksolution.Cameras are being installed at most building structures as well as traffic lights for military surveillance since safety technology evolves.The sensor video footage can be used to identify suspects, criminals, runaways, and missing people,among other things. 
 
-
+[Prototype with explanation](C:\Users\S547054\OneDrive - nwmissouri.edu\Desktop\GDP-1)
 
 
 

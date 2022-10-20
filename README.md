@@ -55,9 +55,9 @@ using cutting-edge face recognition systems is a simple and quicksolution.Camera
 
 Contour Detection:
 
-[4.1 HOG Algorithm .docx](https://github.com/SaiMalayajaVarada/GRAD-DIRECT-PROJECT-I-02-GROUP-5/files/9831557/4.1.HOG.Algorithm.docx)
+>[4.1 HOG Algorithm .docx](https://github.com/SaiMalayajaVarada/GRAD-DIRECT-PROJECT-I-02-GROUP-5/files/9831557/4.1.HOG.Algorithm.docx)
 
-[4.2 KNN Algorithm.docx](https://github.com/SaiMalayajaVarada/GRAD-DIRECT-PROJECT-I-02-GROUP-5/files/9831563/4.2.KNN.Algorithm.docx)
+>[4.2 KNN Algorithm.docx](https://github.com/SaiMalayajaVarada/GRAD-DIRECT-PROJECT-I-02-GROUP-5/files/9831563/4.2.KNN.Algorithm.docx)
 
 [TheFacenet Approach.docx](https://github.com/SaiMalayajaVarada/GRAD-DIRECT-PROJECT-I-02-GROUP-5/files/9831571/TheFacenet.Approach.docx)
 

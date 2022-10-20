@@ -1,7 +1,7 @@
 #### GRAD-DIRECT-PROJECT-I-02-GROUP-5
 > A project for demonstrating the team collaboration.
 
-## Team Members and Roles
+#### Team Members and Roles
 
 ##### Zabheen Shaik 
 > -  Web Application Developer
@@ -42,6 +42,10 @@ using cutting-edge face recognition systems is a simple and quicksolution.Camera
 [Prototype with Explanation.docx](https://github.com/SaiMalayajaVarada/GRAD-DIRECT-PROJECT-I-02-GROUP-5/files/9825909/Prototype.with.Explanation.docx)
 
 [Overview of Methodology](Documents)
+
+[Face Recognition Approach](Desktop)
+
+[Implementation of CIS](Desktop)
 
 
 

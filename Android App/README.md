@@ -71,7 +71,7 @@ Front Page Of Web Application:
 
 [Software installation for web application.rtf](https://github.com/SaiMalayajaVarada/GRAD-DIRECT-PROJECT-I-02-GROUP-5/blob/main/Android%20App/Software%20Installations%20for%20Web%20Application.rtf)
 
-Regestration Pages:
+Registration Pages:
 
 [aut&log.docx](https://github.com/SaiMalayajaVarada/GRAD-DIRECT-PROJECT-I-02-GROUP-5/blob/main/Android%20App/aut%26log.docx) 
 

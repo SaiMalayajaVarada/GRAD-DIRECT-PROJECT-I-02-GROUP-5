@@ -61,7 +61,13 @@ Contour Detection:
 
 [TheFacenet Approach.docx](https://github.com/SaiMalayajaVarada/GRAD-DIRECT-PROJECT-I-02-GROUP-5/files/9831571/TheFacenet.Approach.docx)
 
-[CameraX with Android Image.docx](https://github.com/SaiMalayajaVarada/GRAD-DIRECT-PROJECT-I-02-GROUP-5/files/9831574/CameraX.with.Android.Image.docx)
+[CameraX with Android Image.docx](https://github.com/SaiMalayajaVarada/GRAD-DIRECT-PROJECT-I-02-GROUP-5/files/9831574/CameraX.with.Android.Image.docx) 
+
+Front Page Of Web Application:
+
+[Notes.docx](https://github.com/SaiMalayajaVarada/GRAD-DIRECT-PROJECT-I-02-GROUP-5/blob/main/Android%20App/Notes.docx)
+[Project in Pycharm named Criminal identification.rtf](https://github.com/SaiMalayajaVarada/GRAD-DIRECT-PROJECT-I-02-GROUP-5/blob/main/Android%20App/Project%20in%20PyCharm%20named%20Criminal%20Identification.rtf)
+[Software installation for web application.rtf](https://github.com/SaiMalayajaVarada/GRAD-DIRECT-PROJECT-I-02-GROUP-5/blob/main/Android%20App/Software%20Installations%20for%20Web%20Application.rtf)
 
 
 

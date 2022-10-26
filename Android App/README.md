@@ -71,6 +71,15 @@ Front Page Of Web Application:
 
 [Software installation for web application.rtf](https://github.com/SaiMalayajaVarada/GRAD-DIRECT-PROJECT-I-02-GROUP-5/blob/main/Android%20App/Software%20Installations%20for%20Web%20Application.rtf)
 
+Regestration Pages:
+
+[aut&log.docx](https://github.com/SaiMalayajaVarada/GRAD-DIRECT-PROJECT-I-02-GROUP-5/blob/main/Android%20App/aut%26log.docx) 
+
+[Authority registration page and database creation.odt](https://github.com/SaiMalayajaVarada/GRAD-DIRECT-PROJECT-I-02-GROUP-5/blob/main/Android%20App/Authority%20registration%20page%20and%20database%20creation..odt)
+
+[Registartion Pages.odt](https://github.com/SaiMalayajaVarada/GRAD-DIRECT-PROJECT-I-02-GROUP-5/blob/main/Android%20App/Registration%20Pages.odt)
+
+[User registration page and database connection](https://github.com/SaiMalayajaVarada/GRAD-DIRECT-PROJECT-I-02-GROUP-5/blob/main/Android%20App/User%20registration%20page%20and%20database%20connection.odt)
 
 
 

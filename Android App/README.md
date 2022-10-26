@@ -79,9 +79,11 @@ Regestration Pages:
 
 [Registartion Pages.odt](https://github.com/SaiMalayajaVarada/GRAD-DIRECT-PROJECT-I-02-GROUP-5/blob/main/Android%20App/Registration%20Pages.odt)
 
-[User registration page and database connection](https://github.com/SaiMalayajaVarada/GRAD-DIRECT-PROJECT-I-02-GROUP-5/blob/main/Android%20App/User%20registration%20page%20and%20database%20connection.odt)
+[User registration page and database connection.odt](https://github.com/SaiMalayajaVarada/GRAD-DIRECT-PROJECT-I-02-GROUP-5/blob/main/Android%20App/User%20registration%20page%20and%20database%20connection.odt)
 
+Database MySql Workbench:
 
+[Database.docx](https://github.com/SaiMalayajaVarada/GRAD-DIRECT-PROJECT-I-02-GROUP-5/blob/main/Android%20App/DATABASE.docx)
 
 
 

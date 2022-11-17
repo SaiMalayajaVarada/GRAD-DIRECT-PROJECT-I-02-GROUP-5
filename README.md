@@ -27,13 +27,6 @@
 > - 🌱 I’m currently pursing GDP Course.
 > - ⚡ Fun fact: I am interested in learning about new things.
 
-#### Prasanna Konakanchi
-> - Associate Application Developer
-> - 🔭 I’m currently working on Android.
-> - 🌱 I’m currently pursing GDP Course.
-> - ⚡ Fun fact: I am interested in cooking and travelling.
-
-
 ## Abstract
 
 > Identifying and spotting a criminal is a time-consuming and difficult process.Criminals are becoming smarter by not leaving biological evidence or fingerprint impressions at crime scenes. 
@@ -43,25 +36,11 @@ using cutting-edge face recognition systems is a simple and quicksolution.Camera
 
 [Overview of Methodology.docx](https://github.com/SaiMalayajaVarada/GRAD-DIRECT-PROJECT-I-02-GROUP-5/files/9831419/Overview.of.Methodology.docx)
 
-[Face Recognition Approach.docx](https://github.com/SaiMalayajaVarada/GRAD-DIRECT-PROJECT-I-02-GROUP-5/files/9831420/Face.Recognition.Approach.docx)
-
 [Implementation of Criminal Identification System.docx](https://github.com/SaiMalayajaVarada/GRAD-DIRECT-PROJECT-I-02-GROUP-5/files/9831421/Implementation.of.Criminal.Identification.System.docx)
 
 [AWS Elastic beanstalk.docx](https://github.com/SaiMalayajaVarada/GRAD-DIRECT-PROJECT-I-02-GROUP-5/files/9831425/AWS.Elastic.beanstalk.docx)
 
 [ML Kit for face recognition.docx](https://github.com/SaiMalayajaVarada/GRAD-DIRECT-PROJECT-I-02-GROUP-5/files/9831444/ML.Kit.for.face.recognition.docx)
-
-[Flask Web Application.docx](https://github.com/SaiMalayajaVarada/GRAD-DIRECT-PROJECT-I-02-GROUP-5/files/9831435/Flask.Web.Application.docx)
-
-Contour Detection:
-
->[4.1 HOG Algorithm .docx](https://github.com/SaiMalayajaVarada/GRAD-DIRECT-PROJECT-I-02-GROUP-5/files/9831557/4.1.HOG.Algorithm.docx)
-
->[4.2 KNN Algorithm.docx](https://github.com/SaiMalayajaVarada/GRAD-DIRECT-PROJECT-I-02-GROUP-5/files/9831563/4.2.KNN.Algorithm.docx)
-
-[TheFacenet Approach.docx](https://github.com/SaiMalayajaVarada/GRAD-DIRECT-PROJECT-I-02-GROUP-5/files/9831571/TheFacenet.Approach.docx)
-
-[CameraX with Android Image.docx](https://github.com/SaiMalayajaVarada/GRAD-DIRECT-PROJECT-I-02-GROUP-5/files/9831574/CameraX.with.Android.Image.docx) 
 
 Front Page Of Web Application:
 

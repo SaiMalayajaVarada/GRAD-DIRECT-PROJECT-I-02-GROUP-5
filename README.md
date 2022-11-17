@@ -38,10 +38,6 @@ using cutting-edge face recognition systems is a simple and quicksolution.Camera
 
 [Implementation of Criminal Identification System.docx](https://github.com/SaiMalayajaVarada/GRAD-DIRECT-PROJECT-I-02-GROUP-5/files/9831421/Implementation.of.Criminal.Identification.System.docx)
 
-[AWS Elastic beanstalk.docx](https://github.com/SaiMalayajaVarada/GRAD-DIRECT-PROJECT-I-02-GROUP-5/files/9831425/AWS.Elastic.beanstalk.docx)
-
-[ML Kit for face recognition.docx](https://github.com/SaiMalayajaVarada/GRAD-DIRECT-PROJECT-I-02-GROUP-5/files/9831444/ML.Kit.for.face.recognition.docx)
-
 Front Page Of Web Application:
 
 [Notes.docx](https://github.com/SaiMalayajaVarada/GRAD-DIRECT-PROJECT-I-02-GROUP-5/blob/main/Android%20App/Notes.docx)

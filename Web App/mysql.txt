@@ -1,0 +1,11 @@
+MySQL Workbench is a free, open source database modeling and design tool developed by MySQL. It is the successor to DBDesigner4.
+
+MySQL Workbench provides data modeling, SQL development, and comprehensive administration tools for server configuration, user administration, backup, and much more. MySQL Workbench is available on Windows, Linux and Mac OS X.
+
+In this blog article we will be focusing on how to use MySQL Workbench for designing and creating a database for storing criminal and police data.
+
+When it comes to databases there are many different types of data that need to be stored in order to keep track of criminals and police activity. This data can include things like: names, addresses, dates of birth, Social Security numbers, criminal records, etc. In order to store all of this information in a MySQL database we will need to design our tables accordingly.
+
+Here is an example of a table that could be used to store information on criminals:
+
+As you can see from the above screenshot, we have created a table with the following fields: first name, last name, date of birth, Social Security number, and criminal record.

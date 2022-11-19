@@ -1,5 +1,3 @@
-from operator import indexOf
-from sqlite3 import Row
 import tkinter as tk
 from tkinter import filedialog
 from tkinter import messagebox
@@ -17,7 +15,6 @@ import csv
 import numpy as np
 import ntpath
 import os
-import pandas as pd 
 
 active_page = 0
 thread_event = None
@@ -60,8 +57,7 @@ def goBack():
 def basicPageSetup(pageNo):
     global left_frame, right_frame, heading
 
-    back_img = tk.PhotoImage(file= r"C:\Users\S547054\OneDrive - nwmissouri.edu\Desktop\criminal recognition\img\back.png")
-    
+    back_img = tk.PhotoImage(file= r"C:\Users\hp\Documents\GitHub\Face-Recognition-For-Criminal-Detection-GUi\img\back.png")
     back_button = tk.Button(pages[pageNo], image=back_img, bg="#3E3B3C", bd=0, highlightthickness=0,
            activebackground="#3E3B3C", command=goBack)
     back_button.image = back_img
@@ -223,21 +219,11 @@ def register(entries, required, menu_var):
             shutil.move(path, os.path.join('face_samples', entry_data["Name"]))
 
             # save profile pic
+            profile_img_num = int(menu_var.get().split(' ')[1]) - 1
+            if not os.path.isdir("profile_pics"):
+                os.mkdir("profile_pics")
+            cv2.imwrite("profile_pics/criminal %d.png"%rowId, img_list[profile_img_num])
 
-            print("###########################################")
-            df = pd.read_csv("Criminal.csv")
-            print(df) 
-            
-            iv= df.index
-            for x in iv:
-                print(x)
-            
-            
-            profile_img_num = x+1
-
-            cv2.imwrite("C:/Users/S547054/OneDrive - nwmissouri.edu/Desktop/criminal recognition/profile_pics/criminal %d.png"%profile_img_num,img)
-
-            
             goBack()
         else:
             shutil.rmtree(path, ignore_errors=True)
@@ -325,9 +311,6 @@ def getPage1():
            activeforeground="white").pack(pady=25)
 
 
-		
-
-
 def showCriminalProfile(name):
     top = tk.Toplevel(bg="#202d42")
     top.title("Criminal Profile")
@@ -341,38 +324,9 @@ def showCriminalProfile(name):
     content.grid_columnconfigure(1, weight=5, uniform="group1")
     content.grid_rowconfigure(0, weight=1)
 
-    #(id, crim_data) = retrieveData(name)
-    print(name)
-    print("###########################################")
-    df = pd.read_csv("Criminal.csv",index_col ="Name")
-    print(df)    
-    print("###########################################") 
-    #df = df[df['Name'] == name.lower()] 
-    datdc = df.loc[name.lower()]
-    print(datdc[0])
-    print(datdc[1])  
-    print(datdc[2])  
-    print(datdc[3])    
-    print("###########################################")  
-    
-    print("###########################################")
-    df = pd.read_csv("Criminal.csv")
-    print(df)    
-    print("###########################################") 
-    df = df[df['Name'] == name.lower()] 
+    (id, crim_data) = retrieveData(name)
 
-    iv= df.index
-    for x in iv:
-        print(x)
-    
-    
-    id=x+1
-    print("###########################################")    
- 
-
-    path =("C:\\Users\\S547054\\OneDrive - nwmissouri.edu\\Desktop\\criminal recognition\\profile_pics\\criminal %d.png"%id)
-
-    print(path)
+    path = os.path.join("profile_pics", "criminal %d.png"%id)
     profile_img = cv2.imread(path)
 
     profile_img = cv2.resize(profile_img, (500, 500))
@@ -386,7 +340,7 @@ def showCriminalProfile(name):
     info_frame = tk.Frame(content, bg="#202d42")
     info_frame.grid(row=0, column=1, sticky='w')
 
-    for i, item in enumerate(datdc.items()):
+    for i, item in enumerate(crim_data.items()):
         tk.Label(info_frame, text=item[0], pady=15, fg="yellow", font="Arial 15 bold", bg="#202d42").grid(row=i, column=0, sticky='w')
         tk.Label(info_frame, text=":", fg="yellow", padx=50, font="Arial 15 bold", bg="#202d42").grid(row=i, column=1)
         val = "---" if (item[1]=="") else item[1]
@@ -467,20 +421,206 @@ def getPage2():
            fg="white", pady=10, bd=0, highlightthickness=0, activebackground="#3E3B3C",
            activeforeground="white").grid(row=0, column=1, padx=25, pady=25)
 
+# def path_leaf(path):
+#     head,tail = ntpath.split(path)
+
+
+def videoLoop(path,model, names):
+    p=path
+    q=ntpath.basename(p)
+    filenam, file_extension = os.path.splitext(q)
+    # print(filename)
+    global thread_event, left_frame, webcam, img_label
+    start=time.time()
+    webcam = cv2.VideoCapture(p)
+    old_recognized = []
+    crims_found_labels = []
+    times = []
+    img_label = None
+    field=['S.No.', 'Name', 'Time']
+    g=filenam+'.csv'
+    # filename = "g.csv"
+    filename = g
+    # with open('people.csv', 'w', ) as csvfile:
+    # peoplewriter = csv.writer(csvfile, delimiter=',', quotechar='|', quoting=csv.QUOTE_MINIMAL)
+    # os.path.join(path, vid.split('.')[0]+'_'+str(count)+'.png'
+    num=0
+    try:
+        # with open('people_Details.csv', 'w', ) as csvfile:
+        with open(filename, 'w') as csvfile:
+            # peoplewriter = csv.writer(csvfile, delimiter=',', quotechar='|', quoting=csv.QUOTE_MINIMAL)
+            csvwriter = csv.writer(csvfile)
+            csvwriter.writerow(field)   
+            while not thread_event.is_set():
+                
+                # Loop until the camera is working
+                
+                    
+                    while (True):
+                        # Put the image from the webcam into 'frame'
+                        (return_val, frame) = webcam.read()
+                        if (return_val == True):
+                            break
+                        # else:
+                        #     print("Failed to open webcam. Trying again...")
+
+                    # Flip the image (optional)
+                    frame = cv2.flip(frame, 1, 0)
+                    # Convert frame to grayscale
+                    gray_frame = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+
+                    # Detect Faces
+                    face_coords = detect_faces(gray_frame)
+                    (frame, recognized) = recognize_face(model, frame, gray_frame, face_coords, names)
+
+                    # Recognize Faces
+                    recog_names = [item[0] for item in recognized]
+                    if(recog_names != old_recognized):
+                        for wid in right_frame.winfo_children():
+                            wid.destroy()
+                        del(crims_found_labels[:])
+
+                        for i, crim in enumerate(recognized):
+                            num+=1
+                            x=time.time()-start
+                            crims_found_labels.append(tk.Label(right_frame, text=crim[0], bg="orange",
+                                                            font="Arial 15 bold", pady=20))
+                            crims_found_labels[i].pack(fill="x", padx=20, pady=10)
+                            crims_found_labels[i].bind("<Button-1>", lambda e, name=crim[0]: showCriminalProfile(name))
+                            y=crim[0]
+                            print(x,y)
+                            arr = [num,y,x]
+                            # peoplewriter.writerow(arr)
+                            csvwriter.writerow(arr)  
+                            
+                            # print('hello')
+                        old_recognized = recog_names
+
+                    # Display Video stream
+                    img_size = min(left_frame.winfo_width(), left_frame.winfo_height()) - 20
+
+                    showImage(frame, img_size)
+
+    except RuntimeError:
+        print("[INFO]Caught Runtime Error")
+    except tk.TclError:
+        print("[INFO]Caught Tcl Error")
+
+
+# video surveillance Page ##
+def getPage4(path):
+    p=path
+    # print(p)
+    global active_page, video_loop, left_frame, right_frame, thread_event, heading
+    active_page = 4
+    pages[4].lift()
+
+    basicPageSetup(4)
+    heading.configure(text="Video Surveillance")
+    right_frame.configure(text="Detected Criminals")
+    left_frame.configure(pady=40)
+
+    btn_grid = tk.Frame(right_frame, bg="#3E3B3C")
+    btn_grid.pack()
+
+    (model, names) = train_model()
+    print('Training Successful. Detecting Faces')
+
+    thread_event = threading.Event()
+    thread = threading.Thread(target=videoLoop, args=(p,model, names))
+    thread.start()
+
+def getPage3():
+    global active_page, video_loop, left_frame, right_frame, thread_event, heading
+    active_page = 3
+    pages[3].lift()
+
+    basicPageSetup(3)
+    heading.configure(text="Video Surveillance")
+
+    btn_grid = tk.Frame(left_frame,bg="#3E3B3C")
+    btn_grid.pack()
+
+    tk.Button(btn_grid, text="Select Video", command=selectvideo, font="Arial 15 bold", padx=20, bg="#000000",
+                fg="white", pady=10, bd=0, highlightthickness=0, activebackground="#3E3B3C",
+                activeforeground="white").grid(row=0, column=0, padx=25, pady=25)
+    
+    
+
+    # tk.Button(btn_grid, text="Recognize", command=getPage3(), font="Arial 15 bold", padx=20, bg="#000000",
+    #        fg="white", pady=10, bd=0, highlightthickness=0, activebackground="#3E3B3C",
+    #        activeforeground="white").grid(row=0, column=1, padx=25, pady=25)
+
+
+def selectvideo():
+    global left_frame, img_label, img_read
+    for wid in right_frame.winfo_children():
+        wid.destroy()
+
+    filetype = [("video", "*.mp4 *.mkv")]
+    path = filedialog.askopenfilename(title="Choose a video", filetypes=filetype)
+    p=''
+    p=path
+    
+    if(len(path) > 0):
+        # vid_read = cv2.imread(path)
+        # print(vid_read)
+        getPage4(p)
+        # img_read = cv2.imread(path)
+
+    #     img_size =  left_frame.winfo_height() - 40
+    #     showImage(img_read, img_size)
+
+# def getPage3():
+#     global active_page, left_frame, right_frame, img_label, heading
+#     img_label = None
+#     active_page = 2
+#     pages[2].lift()
+
+#     basicPageSetup(2)
+#     heading.configure(text="Video Surveillance")
+#     right_frame.configure(text="Detected Criminals")
+
+#     btn_grid = tk.Frame(left_frame, bg="#3E3B3C")
+#     btn_grid.pack()
+
+#     tk.Button(btn_grid, text="Select video", command=selectvideo, font="Arial 15 bold", padx=20, bg="#000000",
+#             fg="white", pady=10, bd=0, highlightthickness=0, activebackground="#3E3B3C",
+#             activeforeground="white").grid(row=0, column=0, padx=25, pady=25)
+#     tk.Button(btn_grid, text="Recognize", command=startRecognition, font="Arial 15 bold", padx=20, bg="#000000",
+#            fg="white", pady=10, bd=0, highlightthickness=0, activebackground="#3E3B3C",
+#            activeforeground="white").grid(row=0, column=1, padx=25, pady=25)
+
+def selectvideo1():
+    # global left_frame, img_label, img_read
+    # for wid in right_frame.winfo_children():
+    #     wid.destroy()
+
+    filetype = [("video", "*.mp4 *.mkv")]
+    path = filedialog.askopenfilename(title="Choose a video", filetypes=filetype)
+    p=''
+    p=path
+    
+    if(len(path) > 0):
+        # vid_read = cv2.imread(path)
+        # print(vid_read)
+       detect(p)
+
 ######################################## Home Page ####################################
 tk.Label(pages[0], text="Face Recognition System for Criminal Detection", fg="black", bg="#3E3B3C",
       font="Arial 25 bold", pady=30).pack()
 
-logo = tk.PhotoImage(file = r"C:\Users\S547054\OneDrive - nwmissouri.edu\Desktop\criminal recognition\img\logo2.png")
-
+logo = tk.PhotoImage(file = r"C:\Users\hp\Documents\GitHub\Face-Recognition-For-Criminal-Detection-GUi\img\logo2.png")
 tk.Label(pages[0], image=logo, bg="#3E3B3C").pack(side='left')
 
 btn_frame = tk.Frame(pages[0], bg="#3E3B3C", pady=30)
 btn_frame.pack()
 
-
+tk.Button(btn_frame, text="Input Video", command=selectvideo1)
 tk.Button(btn_frame, text="Add Criminal Details", command=getPage1)
 tk.Button(btn_frame, text="Image Surveillance", command=getPage2)
+tk.Button(btn_frame, text="Video Surveillance", command=getPage3)
+
 
 for btn in btn_frame.winfo_children():
     btn.configure(font="Arial 20", width=17, bg="#000000", fg="white",

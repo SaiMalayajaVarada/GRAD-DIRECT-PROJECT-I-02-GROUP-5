@@ -1,0 +1,6 @@
+How do I install mysql bench on my computer?
+The installation of mysql bench is a simple process. It can be done in three steps:
+1. Download the latest version of mysql bench from https://dev.mysql.com/downloads/tools/benchmark/.
+2. Unzip the package and copy the files to your desired location on your computer.
+3. Open Command Prompt and type "mysql-bench" to start the program!
+The Face Detection and Recognition Using A Criminal Identification System is a project that is aimed to improve the efficiency of the criminal identification system by using facial recognition.

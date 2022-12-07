@@ -59,3 +59,7 @@ Registration Pages:
 Database MySql Workbench:
 
 [Database.docx](https://github.com/SaiMalayajaVarada/GRAD-DIRECT-PROJECT-I-02-GROUP-5/blob/main/Android%20App/DATABASE.docx)
+
+Database into the cloud:
+
+[Database into the Cloud.docx](https://github.com/SaiMalayajaVarada/GRAD-DIRECT-PROJECT-I-02-GROUP-5/blob/main/Web%20App/Criminal%20Database%20Connection.docx)

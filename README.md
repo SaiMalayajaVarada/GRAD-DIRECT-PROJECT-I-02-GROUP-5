@@ -60,9 +60,6 @@ Database MySql Workbench:
 
 [Database.docx](https://github.com/SaiMalayajaVarada/GRAD-DIRECT-PROJECT-I-02-GROUP-5/blob/main/Android%20App/DATABASE.docx)
 
-Teammates-05:
-
-[Home.rtf](https://github.com/SaiMalayajaVarada/GRAD-DIRECT-PROJECT-I-02-GROUP-5/blob/main/Web%20App/Home.rtf)
 
 Database into the cloud:
 

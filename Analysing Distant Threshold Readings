@@ -1,0 +1,6 @@
+Minimum distant threshold reading - 0.25
+Maximum distant threshold readings - 0.95
+Distant Threshold Scale - 0.00 to 1.00
+App is working good for minimum reading.
+As we team go on increasing 0.05 everytime, app is still showing good result but as we go higher there are chances for the app to mislead us with a different image as
+detected.

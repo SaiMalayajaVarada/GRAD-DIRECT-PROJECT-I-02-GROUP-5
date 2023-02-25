@@ -3,4 +3,8 @@ import urllib.request
 def store_image(url, local_file_name):
   with urllib.request.urlopen(url) as resource:
     with open(local_file_name, 'wb') as f:
-      f.write(resource.read())
+  
+    f.write(resource.read())
+
+from matplotlib import pyplot as plt
+from mtcnn.mtcnn import MTCNN

@@ -1,18 +1,6 @@
-fashion_mnist = tf.keras.datasets.fashion_mnist
+import urllib.request
 
-(train_images, train_labels), (test_images, test_labels) = fashion_mnist.load_data()
-
-Preprocess the data:
-plt.figure()
-plt.imshow(train_images[0])
-plt.colorbar()
-plt.grid(False)
-plt.show()
-
-
-build model:
-model = tf.keras.Sequential([
-    tf.keras.layers.Flatten(input_shape=(28, 28)),
-    tf.keras.layers.Dense(128, activation='relu'),
-    tf.keras.layers.Dense(10)
-])
+def store_image(url, local_file_name):
+  with urllib.request.urlopen(url) as resource:
+    with open(local_file_name, 'wb') as f:
+      f.write(resource.read())

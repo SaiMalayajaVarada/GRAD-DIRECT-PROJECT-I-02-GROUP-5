@@ -1,0 +1,10 @@
+import numpy as np
+import matplotlib.pyplot as plt
+from sklearn import metrics
+from sklearn.datasets import make_circles
+from sklearn.preprocessing import StandardScaler
+from sklearn.cluster import DBSCAN
+X, y = make_circles(n_samples=750, factor=0.3, noise=0.1)
+X = StandardScaler().fit_transform(X)
+y_pred = DBSCAN(eps=0.3, min_samples=10).fit_predict(X)
+

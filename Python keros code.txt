@@ -1,18 +1,25 @@
-fashion_mnist = tf.keras.datasets.fashion_mnist
+import urllib.request
 
-(train_images, train_labels), (test_images, test_labels) = fashion_mnist.load_data()
+def store_image(url, local_file_name):
+  with urllib.request.urlopen(url) as resource:
+    with open(local_file_name, 'wb') as f:
+  
+    f.write(resource.read())
 
-Preprocess the data:
-plt.figure()
-plt.imshow(train_images[0])
-plt.colorbar()
-plt.grid(False)
-plt.show()
+from matplotlib import pyplot as plt
+from mtcnn.mtcnn import MTCNN
 
+def highlight_faces(image_path, faces):
+  # display image
+  image = plt.imread(image_path)
+  plt.imshow(image)
 
-build model:
-model = tf.keras.Sequential([
-    tf.keras.layers.Flatten(input_shape=(28, 28)),
-    tf.keras.layers.Dense(128, activation='relu'),
-    tf.keras.layers.Dense(10)
-])
+  ax = plt.gca()
+
+  # for each face, draw a rectangle based on coordinates
+  for face in faces:
+    x, y, width, height = face['box']
+    face_border = Rectangle((x, y), width, height,
+                          fill=False, color='red')
+    ax.add_patch(face_border)
+  plt.show()

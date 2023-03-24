@@ -1,0 +1,4 @@
+Limitations Of Criminal Identification System Used for Face Recognition and Face Detection.
+(1)Dark Face : This criminal identification system cannot detect the dark faces.
+(2)Identical Faces : This criminal identification system cannot differentiate the identical faces(twins).
+Result: The result of this sytem for these two types of faces will be "No Match Found".

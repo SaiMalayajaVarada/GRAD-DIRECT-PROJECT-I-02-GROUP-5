@@ -1,0 +1,11 @@
+MySQL Workbench is a free, open source database modeling and design tool that is developed by Oracle. It is used to design, generate, and manage MySQL databases. In this blog post, we will explore how to use MySQL Workbench to design a database for police data storage. We will cover topics such as entity relationship diagrams, table creation, and indexing. By the end of this post, you will have a better understanding of how to use MySQL Workbench to design a database.
+
+MySQL Workbench
+
+Working on database part for criminal, police data storage by using MySQL Workbench
+
+MySQL Workbench is a visual database design tool that integrates SQL development, administration, database design, creation, and maintenance into a single integrated development environment for the MySQL database system. It is available as both a standalone product and as an included component of the MySQL Enterprise subscription.
+
+MySQL Workbench provides data modeling, SQL development, and comprehensive administration tools for server configuration, user administration, backup, and much more. MySQL Workbench is available on Windows, Linux and Mac OS X.
+
+In this article we will focus on how to use MySQL Workbench for designing the database part of a criminal/police data storage system.

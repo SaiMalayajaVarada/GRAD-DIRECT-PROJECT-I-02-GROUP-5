@@ -44,5 +44,6 @@ def get_best_pics(num_unique_faces: int, res_dir: str):
             bluriness = cv2.Laplacian(img, cv2.CV_64F).var()
             if bluriness > best_score:
                 best_score = bluriness
+                best_img=img
         fine_images.append(best_img)
     return fine_images

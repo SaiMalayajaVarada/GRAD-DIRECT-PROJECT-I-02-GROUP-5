@@ -47,3 +47,4 @@ def get_best_pics(num_unique_faces: int, res_dir: str):
                 best_img=img
         fine_images.append(best_img)
     return fine_images
+cv2.imwrite(os.path.join(CLUSTERING_RESULT_PATH, title+'.jpg'), montage)

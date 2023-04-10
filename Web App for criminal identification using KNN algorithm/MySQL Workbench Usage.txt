@@ -1,0 +1,6 @@
+How can I use mysql bench to detect faces and recognize faces in video clips?
+A tutorial on how to use mysql bench to detect faces and recognize faces in video clips.
+This is a very useful tool for anyone who wants to identify people and objects in video footage.
+The first step is to install the mysql bench software on your computer. The second step is to launch the program. The third step is to select a database, for example: "temp". The fourth step is to create a new table with the following columns: "image", "x", "y", "width", and "height".
+The fifth step is this column should be called "face" and should be created with an image type of BLOB. In the sixth step, you should create an index called face_idx on this table using the following command: CREATE INDEX face_idx ON temp (face).
+In the seventh, eighth, ninth steps, you will need to copy your video into a folder called temp. Then you will

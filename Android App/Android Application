@@ -1,6 +1,0 @@
-If you are developing an Android application that needs to detect faces and recognize them, there are a few steps that you need to take. 
-The first step is to install the GoogleFaces API v4n1 library. 
-This library provides access to the face recognition capabilities of Google’s Photos service. Once you have the library installed, you can start calling the face recognition methods from your code. 
-Next, you need to create a FaceDetector object and set properties like minimum angle of view (MOA) and size of detection area. 
-To detect faces in video, you will also need to provide a video source and set the clip trace mode to “on”. 
-Finally, you need to call the detect() method on your FaceDetector object and supply a number of arguments: a reference to the video asset,a rect object containing the position of the face within the frame, and an integer indicating which face within the frame is being searched for.

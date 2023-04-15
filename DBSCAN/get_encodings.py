@@ -46,6 +46,8 @@ def create_face_database(directory: str, rm_blur_img: bool = False, threshold: f
         img = cv2.imread(directory + files[i])
         blurriness = cv2.Laplacian(img, cv2.CV_64F).var()
 
+        #adding code for blur image:
+        
         if rm_blur_img:
             if blurriness >= threshold:
                 pass

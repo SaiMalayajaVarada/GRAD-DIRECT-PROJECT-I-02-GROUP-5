@@ -1,5 +1,6 @@
 import get_encodings as enc
 import face_cluster as cluster
+import numpy as np
 
 root_path = 'face_images/'
 
